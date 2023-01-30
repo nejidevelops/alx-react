@@ -23,7 +23,7 @@ function Notifications() {
         console.log('Close button has been clicked');
       }}
       >
-        <img src={closeIcon} alt="close icon" />
+        <img src={closeIcon} alt="close icon" width="15px" />
       </button>
       <p>Here is the list of notifications</p>
       <ul>
