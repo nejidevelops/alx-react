@@ -1,22 +1,11 @@
-th {
-    border-bottom: 1px solid gray;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-th:first-child {
-    text-align: center;
-}
-
 table {
-    width: 90%;
-    border: 1px solid gray;
-    margin: auto;
-    margin-top: 40px;
-    padding: 0;
+    border: solid 2px rgb(189, 187, 187);
+    width: 100%;
 }
-
-td {
-    padding-left: 3px;
+table thead tr th {
+    border-bottom: solid 2px rgb(189, 187, 187);
+    text-align: start;
+}
+th[colspan="2"] {
+    text-align: center;
 }
