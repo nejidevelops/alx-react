@@ -1,35 +1,30 @@
-*, *::after, *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-.Notifications {
-    border: 3px dotted red;
-    padding: 5rem;
-    padding-bottom: 1.5rem;
-    position: absolute;
-    top: 3rem;
-    right: 1rem;
-}
-
-.Notifications  p {
-
-    margin-bottom: 25px;
-    position: absolute;
-    left: 1rem;
-    top: 3rem;
-}
-
 .menuItem {
     position: absolute;
-    top: 0rem;
-    right: 1rem;
+    top: 7px;
+    right: 7px;
 }
 
-ul li[data-notification-type= "default"] {
-    color: blue;
+.Notifications {
+	border: 3px dotted var(--holberton-red);
+	padding: 6px 12px;
+    position: absolute;
+    top: 21px;
+    right: 7px;
+	margin-top: 12px;
 }
 
-ul li[data-notification-type = "urgent"] {
-    color: red;
+li[data-priority="default"] {
+	color: blue;
+}
+
+li[data-priority="urgent"] {
+	color: var(--holberton-red);
+}
+
+li[data-notification-type="default"] {
+	color: blue;
+}
+
+li[data-notification-type="urgent"] {
+	color: var(--holberton-red);
 }
