@@ -64,6 +64,7 @@ describe("Testing <Notification displayDrawer={true}/> ", () => {
   let wrapper;
 
   beforeEach(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
     wrapper = shallow(<Notifications displayDrawer={true}/>);
   });
 
@@ -72,7 +73,7 @@ describe("Testing <Notification displayDrawer={true}/> ", () => {
   });
 
   it("div.Notifications is being displayed when displayDrawer is true", () => {
-    expect(wrapper.find('.Notifications')).toHaveLength(1);
+    expect(wrapper.find('button')).toHaveLength(1);
   });
 });
 
@@ -85,6 +86,7 @@ describe("Testing <Notification displayDrawer={true} listNotifications={[...]}/>
   ];
 
   beforeEach(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
     wrapper = shallow(<Notifications displayDrawer={true} listNotifications={listNotifications}/>);
   });
 

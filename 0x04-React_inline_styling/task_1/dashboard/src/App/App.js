@@ -8,7 +8,7 @@ import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBot
 import BodySection from '../BodySection/BodySection';
 import { getLatestNotification } from '../utils/utils';
 import PropTypes from 'prop-types';
-import {StyleSheet, css} from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite';
 
 
 class App extends React.Component {
@@ -70,6 +70,25 @@ class App extends React.Component {
   }
 }
 
+const appStyles = StyleSheet.create({
+  App: {
+    position: 'relative',
+    minHeight: '100vh'
+  } 
+});
+
+const footerStyles = StyleSheet.create({
+	footer: {
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center',
+		borderTop: '3px solid #E11D3F',
+		padding: '1rem',
+		fontStyle: 'italic',
+	}
+});
+
 App.defaultProps = {
   isLoggedIn: false,
   logOut: () => {}
@@ -79,24 +98,5 @@ App.propTypes = {
   isLoggedIn: PropTypes.bool,
   logOut: PropTypes.func
 };
-
-const appStyles = StyleSheet.create({
-  App: {
-    position: "relative",
-    minHeight: "100vh",
-  }
-});
-
-const footerStyles = StyleSheet.create({
-  footer: {
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'center',
-		alignItems: 'center',
-		borderTop: '3px solid #E11D3F',
-		padding: '1rem',
-		fontStyle: 'italic',
-	}
-})
 
 export default App;

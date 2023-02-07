@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import NotificationItem from './NotificationItem';
 import { StyleSheetTestUtils } from 'aphrodite';
 
+
 describe("Testing <NotificationItem />", () => {
   let  wrapper;
 

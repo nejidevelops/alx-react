@@ -8,6 +8,7 @@ describe('Test App.js', () => {
   let wrapper;
 
   beforeEach(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
     wrapper = shallow(<App />);
   });
 
