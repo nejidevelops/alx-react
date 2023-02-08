@@ -1,4 +1,5 @@
 import React from 'react';
+// import './App.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Notification from '../Notifications/Notifications';
@@ -8,9 +9,7 @@ import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBot
 import BodySection from '../BodySection/BodySection';
 import { getLatestNotification } from '../utils/utils';
 import PropTypes from 'prop-types';
-import { StyleSheet, css } from 'aphrodite';
-
-
+import {StyleSheet, css} from 'aphrodite';
 class App extends React.Component {
   
   constructor(props) {
@@ -51,7 +50,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Notification listNotifications={this.listNotifications}/>
-        <div className={css(appStyles.App)}>
+        <div className={css(appStyles.app)}>
           <Header />
           {this.props.isLoggedIn ?
             <BodySectionWithMarginBottom title="Course list"><CourseList listCourses={this.listCourses}/></BodySectionWithMarginBottom>
@@ -71,10 +70,10 @@ class App extends React.Component {
 }
 
 const appStyles = StyleSheet.create({
-  App: {
-    position: 'relative',
-    minHeight: '100vh'
-  } 
+  app: {
+    position: "relative",
+    minHeight: "100vh",
+  }
 });
 
 const footerStyles = StyleSheet.create({
