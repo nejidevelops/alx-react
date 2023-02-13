@@ -10,6 +10,9 @@
 - The use of a React Hook and how to create one
 - How to test State changes with Enzyme
 
-## Resources
-- [State and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+## Tasks
+0. Adding a local state for notifications
+1. Controlled components and state callback
+2. Context
+3. Context consumer & advanced state
+4. Introduction to react hook
