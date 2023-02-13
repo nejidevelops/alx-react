@@ -7,7 +7,7 @@ describe("Utils functions", () => {
   });
 
   test("getFullYear returns the correct year", () => {
-    expect(getFullYear()).toEqual(2022);
+    expect(getFullYear()).toEqual(2023);
   });
 
   test("getFooterCopy returns the correct string when the argument is true", () => {
